@@ -10,8 +10,25 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <h1>Hola mundo</h1>
+        <div id="contenedor">
+            <header> <h1>ELECCIONES GENERALES 2015</h1></header>
+            <!-- Por cada botón un formulario,transacciones-->
+            <div id="cabecera">
+                <form method="post" action="vistas/vistaresultados.jsp">
+                    <button>Resultados</button></form>
+                <form method="post" action="servletControladorcerrarvotacion">
+                    <button>Cerrar votacion</button></form>
+                <form method="post" action="servletControladorcenso">
+                    <button>Consultar censo</button></form>
 
-  <h2>Bienvenidos al mundo mundial</h2>
-  </body>
-</html>
+            </div>
+            <article>
+                <label>NIF</label>
+                <input type="text"/>
+                <label>Clave</label>
+                <input type="password"/>
+                <form method="post" action="servletControladoralta">
+                    <button>Alta</button>
+                </form>
+            </article>
+        </div>
